@@ -10,6 +10,8 @@ docker logs {container-name-or=id}
 
 docker stop {container-name}
 
+docker start {container-name}
+
 docker ps -a
 
 docker ps
