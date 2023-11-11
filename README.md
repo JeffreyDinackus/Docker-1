@@ -18,8 +18,7 @@ docker ps -a
 
 docker ps
 
-docker build -t node-app:node
-
 docker build -t node-app .
+
 docker run -p 3000:3000 --name web-app-1 node-app
 
