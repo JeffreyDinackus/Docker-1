@@ -18,7 +18,10 @@ docker ps -a
 
 docker ps
 
-docker build -t node-app .
+docker build -t node-app:1.0 .
+
+-p localport:containerport
 
 docker run -p 3000:3000 --name web-app-1 node-app
 
+docker run -d -p 3000:3000 --name test -t node-app
