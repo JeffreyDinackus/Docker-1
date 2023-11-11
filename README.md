@@ -2,7 +2,7 @@
 
 
 docker run -d {img}
-docker run -d -p 80:80 nginx:1.25.3
+docker run --name web-app -d -p 80:80 nginx:1.25.3
 
 docker pull img:version
 
