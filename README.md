@@ -22,3 +22,4 @@ docker build -t node-app .
 
 docker run -p 3000:3000 --name web-app-1 node-app
 
+docker container rm $(docker container ls -qa)
