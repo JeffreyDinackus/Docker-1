@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  front:
+    build: ./frontend
+    ports:
+      - 3000:3000
+  back:
+    build: ./backend
+    posts: 3001:3001
+    environment:
+      DB_URL: mongodb://mongo/vidly
+  mongo:
+    image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - vidly:/data/db
+
+volumes:
+  vidly:
