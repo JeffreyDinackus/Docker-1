@@ -12,6 +12,8 @@ docker stop {container-name}
 
 docker start {container-name}
 
+you can start or stop multiple containers at once
+
 docker ps -a
 
 docker ps
