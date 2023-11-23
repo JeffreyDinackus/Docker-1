@@ -6,7 +6,7 @@ docker run --name web-app -d -p 80:80 nginx:1.25.3
 
 docker pull img:version
 
-docker logs {container-name-or=id}
+docker logs {container-name-or-id}
 
 docker stop {container-name}
 
@@ -33,3 +33,6 @@ docker container rm -f $(docker container ls -qa)
 docker container -qa
 
 docker image rm -f $(docker image ls -q)
+
+
+https://dev.to/ysmnikhil/how-to-build-with-react-or-vue-with-vite-and-docker-1a3l
