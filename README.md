@@ -26,6 +26,9 @@ docker run -p 3000:3000 --name web-app-1 node-app
 
 docker run -d -p 3000:3000 --name test -t node-app
 
+docker build -t your-image-name -f YourDockerfile .
+
+
 docker container rm $(docker container ls -qa)
 
 docker container rm -f $(docker container ls -qa)
